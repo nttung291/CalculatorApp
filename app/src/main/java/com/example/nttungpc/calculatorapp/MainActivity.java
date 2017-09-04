@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         if (!tvDown.getText().equals("")){
             num1 = Double.parseDouble(tvUp.getText().toString());
             num2 = Double.parseDouble(tvDown.getText().toString());
-            if (num1 == 0 && !isNumber){
+            if (num1 == 0 && !isNumber && !s.equals("√")){
                 num1 = num2;
                 tvUp.setText(decimalFormat.format(num1));
                 tvDown.setText("");
